@@ -56,7 +56,7 @@ export default function Footer() {
                     aria-label={social.label}
                     className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-slate-300 transition-all hover:-translate-y-1 hover:border-emerald-600 hover:bg-emerald-600 hover:text-white"
                   >
-                    {Icon && <Icon className="h-4.5 w-4.5" />}
+                    {Icon && <Icon className="h-4 w-4" />}
                   </a>
                 );
               })}

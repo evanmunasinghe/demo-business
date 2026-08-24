@@ -21,8 +21,8 @@ export default function FAQ() {
             <button
               onClick={() => setOpenIndex(open ? null : i)}
               aria-expanded={open}
-              className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left"
-            >
+            className="flex w-full items-center justify-between gap-4 px-4 py-4 text-left sm:px-6 sm:py-5"
+          >
               <span className="text-sm font-bold text-slate-900 sm:text-base">{faq.question}</span>
               <ChevronDown
                 className={`h-5 w-5 shrink-0 text-emerald-600 transition-transform duration-300 ${
@@ -36,7 +36,9 @@ export default function FAQ() {
               }`}
             >
               <div className="overflow-hidden">
-                <p className="px-6 pb-6 text-sm leading-relaxed text-slate-600">{faq.answer}</p>
+                <p className="px-4 pb-5 text-sm leading-relaxed text-slate-600 sm:px-6 sm:pb-6">
+                  {faq.answer}
+                </p>
               </div>
             </div>
           </div>

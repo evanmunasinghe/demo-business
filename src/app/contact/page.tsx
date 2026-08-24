@@ -48,7 +48,7 @@ export default function Contact() {
       />
 
       <section className="relative z-10 bg-white/90 pb-8">
-        <div className="mx-auto -mt-16 max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto -mt-10 max-w-7xl px-4 sm:-mt-16 sm:px-6 lg:px-8">
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {contactCards.map((card, i) => (
               <Reveal key={card.title} delay={i * 0.08}>
@@ -71,10 +71,10 @@ export default function Contact() {
         </div>
       </section>
 
-      <section className="bg-white/95 py-24">
-        <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-5 lg:px-8">
+      <section className="bg-white/95 py-16 sm:py-24">
+        <div className="mx-auto grid max-w-7xl gap-8 px-4 sm:gap-10 sm:px-6 lg:grid-cols-5 lg:px-8">
           <Reveal className="lg:col-span-3">
-            <div className="rounded-3xl border border-slate-100 bg-white p-7 shadow-xl shadow-slate-900/5 sm:p-10">
+              <div className="rounded-3xl border border-slate-100 bg-white p-6 shadow-xl shadow-slate-900/5 sm:p-10">
               <h2 className="text-2xl font-extrabold tracking-tight text-slate-900">
                 Request your free quote
               </h2>
@@ -87,7 +87,7 @@ export default function Contact() {
 
           <div className="space-y-6 lg:col-span-2">
             <Reveal delay={0.1}>
-              <div className="relative overflow-hidden rounded-3xl bg-slate-950 p-8 text-white">
+              <div className="relative overflow-hidden rounded-3xl bg-slate-950 p-6 text-white sm:p-8">
                 <div className="absolute inset-0 bg-grid-dark opacity-60" />
                 <div className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-emerald-600/30 blur-3xl" />
                 <h3 className="relative text-lg font-bold">Prefer to talk to a surveyor?</h3>
@@ -122,7 +122,7 @@ export default function Contact() {
             </Reveal>
 
             <Reveal delay={0.18}>
-              <div className="rounded-3xl border border-slate-100 bg-white p-8 shadow-lg shadow-slate-900/5">
+              <div className="rounded-3xl border border-slate-100 bg-white p-6 shadow-lg shadow-slate-900/5 sm:p-8">
                 <div className="flex items-center gap-3">
                   <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600">
                     <Clock className="h-5 w-5" />
@@ -144,7 +144,7 @@ export default function Contact() {
             </Reveal>
 
             <Reveal delay={0.26}>
-              <div className="rounded-3xl bg-gradient-to-br from-emerald-600 to-teal-600 p-8 text-white shadow-lg shadow-emerald-600/25">
+              <div className="rounded-3xl bg-gradient-to-br from-emerald-600 to-teal-600 p-6 text-white shadow-lg shadow-emerald-600/25 sm:p-8">
                 <h3 className="text-lg font-bold">Follow our journey</h3>
                 <p className="mt-1 text-sm text-emerald-100">
                   New projects, drone footage and surveying tips on social.
@@ -182,13 +182,13 @@ export default function Contact() {
                 loading="lazy"
                 allowFullScreen
                 referrerPolicy="no-referrer-when-downgrade"
-                className="h-[420px] w-full border-0 grayscale-[35%] transition-all duration-500 hover:grayscale-0 sm:h-[480px]"
+                className="h-[340px] w-full border-0 grayscale-[35%] transition-all duration-500 hover:grayscale-0 sm:h-[480px]"
               />
               <a
                 href={site.mapsLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="absolute bottom-5 left-5 flex items-center gap-3 rounded-2xl bg-white/95 p-4 pr-6 shadow-lg backdrop-blur transition-transform hover:-translate-y-1"
+                className="absolute bottom-3 left-3 right-3 flex items-center gap-3 rounded-2xl bg-white/95 p-4 pr-6 shadow-lg backdrop-blur transition-transform hover:-translate-y-1 sm:bottom-5 sm:left-5 sm:right-auto"
               >
                 <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-red-50 text-red-500">
                   <MapPin className="h-5 w-5" fill="currentColor" />

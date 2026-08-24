@@ -1,16 +1,10 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
-
-const jakarta = Plus_Jakarta_Sans({
-  variable: "--font-jakarta",
-  subsets: ["latin"],
-  display: "swap",
-});
+import ScrollProgress from "@/components/ScrollProgress";
 
 export const metadata: Metadata = {
   title: {
@@ -27,7 +21,7 @@ export const viewport = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${jakarta.variable} h-full`}>
+    <html lang="en" className="h-full">
       <body className="flex min-h-full flex-col font-sans text-slate-700 antialiased">
         <div aria-hidden className="fixed inset-0 -z-10">
           <Image
@@ -40,6 +34,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           />
           <div className="absolute inset-0 bg-gradient-to-b from-slate-950/55 via-slate-950/25 to-slate-950/55" />
         </div>
+        <ScrollProgress />
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />

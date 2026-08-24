@@ -53,8 +53,8 @@ export default function About() {
         description="A crew of licensed surveyors, CAD technicians and drone pilots obsessed with getting every boundary right."
       />
 
-      <section className="overflow-hidden bg-white/95 py-24">
-        <div className="mx-auto grid max-w-7xl items-center gap-16 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+      <section className="overflow-hidden bg-white/95 py-16 sm:py-24">
+        <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:gap-16 lg:px-8">
           <div>
             <SectionHeading
               align="left"
@@ -125,7 +125,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="bg-slate-50/95 py-24">
+      <section className="bg-slate-50/95 py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="Our foundation"
@@ -139,7 +139,7 @@ export default function About() {
           <div className="grid gap-6 md:grid-cols-3">
             {pillars.map((pillar, i) => (
               <Reveal key={pillar.title} delay={i * 0.12}>
-                <div className="group h-full rounded-3xl border border-slate-100 bg-white p-9 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-slate-900/5">
+                <div className="group h-full rounded-3xl border border-slate-100 bg-white p-7 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-slate-900/5 sm:p-9">
                   <span
                     className={`flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br text-white shadow-lg transition-transform duration-300 group-hover:rotate-3 group-hover:scale-110 ${pillar.gradient} ${pillar.shadow}`}
                   >
@@ -154,7 +154,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="bg-white/95 py-24">
+      <section className="bg-white/95 py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="Meet the crew"
@@ -178,7 +178,7 @@ export default function About() {
                       {member.initials}
                     </span>
                   </div>
-                  <div className="p-6 text-center">
+                  <div className="p-5 text-center sm:p-6">
                     <h3 className="text-lg font-bold text-slate-900">{member.name}</h3>
                     <p className="mt-1 text-sm font-medium text-emerald-700">{member.role}</p>
                     <div className="mt-4 flex justify-center gap-2">

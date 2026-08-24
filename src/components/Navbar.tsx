@@ -25,6 +25,20 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  useEffect(() => {
+    if (!open) return;
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setOpen(false);
+    };
+    document.addEventListener("keydown", onKeyDown);
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.removeEventListener("keydown", onKeyDown);
+      document.body.style.overflow = previousOverflow;
+    };
+  }, [open]);
+
   const solid = scrolled || open;
   const close = () => setOpen(false);
 
@@ -34,7 +48,7 @@ export default function Navbar() {
         solid ? "bg-white/90 shadow-lg shadow-slate-900/5 backdrop-blur-xl" : "bg-transparent"
       }`}
     >
-      <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+      <nav className="mx-auto flex h-[4.5rem] max-w-7xl items-center justify-between px-4 sm:h-20 sm:px-6 lg:px-8">
         <Link href="/" className="group flex items-center gap-2.5" aria-label="DEMO home">
           <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-600 to-teal-600 shadow-lg shadow-emerald-600/30 transition-transform duration-300 group-hover:rotate-3 group-hover:scale-105">
             <LandPlot className="h-5 w-5 text-white" />
@@ -98,9 +112,9 @@ export default function Navbar() {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
-            className="overflow-hidden border-t border-slate-100 bg-white lg:hidden"
+            className="max-h-[calc(100svh-4.5rem)] overflow-y-auto border-t border-slate-100 bg-white shadow-2xl shadow-slate-900/10 lg:hidden"
           >
-            <div className="space-y-1 px-4 py-4 sm:px-6">
+            <div className="space-y-1 px-4 py-4 pb-6 sm:px-6">
               {links.map((link) => {
                 const active = pathname === link.href;
                 return (

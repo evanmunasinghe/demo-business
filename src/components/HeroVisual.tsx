@@ -13,20 +13,20 @@ const corners = [
 
 export default function HeroVisual() {
   return (
-    <div className="relative mx-auto w-full max-w-lg">
+    <div className="relative mx-auto w-full max-w-lg pb-20 sm:pb-0">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.9, delay: 0.3, ease: "easeOut" }}
-        className="relative rounded-3xl border border-white/10 bg-white/[0.06] p-6 shadow-2xl shadow-emerald-950/50 backdrop-blur-xl sm:p-7"
+        className="relative rounded-3xl border border-white/10 bg-white/[0.06] p-5 shadow-2xl shadow-emerald-950/50 backdrop-blur-xl sm:p-7"
       >
-        <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between">
           <div className="flex gap-1.5">
             <span className="h-3 w-3 rounded-full bg-rose-400/80" />
             <span className="h-3 w-3 rounded-full bg-amber-400/80" />
             <span className="h-3 w-3 rounded-full bg-emerald-400/80" />
           </div>
-          <span className="flex items-center gap-2 text-xs font-semibold text-slate-400">
+          <span className="flex items-center gap-2 text-[11px] font-semibold text-slate-400 sm:text-xs">
             <span className="relative flex h-2 w-2">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
@@ -35,7 +35,12 @@ export default function HeroVisual() {
           </span>
         </div>
 
-        <svg viewBox="0 0 320 240" className="mt-5 h-auto w-full" role="img" aria-label="Animated survey plat map of a residential parcel">
+        <svg
+          viewBox="0 0 320 240"
+          className="mt-4 h-auto w-full sm:mt-5"
+          role="img"
+          aria-label="Animated survey plat map of a residential parcel"
+        >
           <defs>
             <pattern id="plat-grid" width="20" height="20" patternUnits="userSpaceOnUse">
               <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(255,255,255,0.05)" strokeWidth="1" />
@@ -132,29 +137,37 @@ export default function HeroVisual() {
           </g>
         </svg>
 
-        <div className="mt-5 flex items-stretch gap-3">
-          <div className="flex flex-1 items-center gap-3 rounded-xl border border-white/10 bg-white/5 p-3">
+        <div className="mt-4 grid grid-cols-2 gap-2.5 sm:mt-5 sm:flex sm:items-stretch sm:gap-3">
+          <div className="flex min-w-0 flex-1 items-center gap-2.5 rounded-xl border border-white/10 bg-white/5 p-3 sm:gap-3">
             <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-emerald-500/15 text-emerald-400">
-              <Satellite className="h-4.5 w-4.5" />
+              <Satellite className="h-4 w-4" />
             </span>
-            <span>
-              <span className="block text-[11px] text-slate-400">GNSS RTK</span>
-              <span className="block text-sm font-bold text-white">Locked · 14 sats</span>
+            <span className="min-w-0">
+              <span className="block text-[10px] leading-tight text-slate-400 sm:text-[11px]">
+                GNSS RTK
+              </span>
+              <span className="block text-xs font-bold leading-tight text-white sm:text-sm">
+                Locked · 14 sats
+              </span>
             </span>
           </div>
-          <div className="flex flex-1 items-center gap-3 rounded-xl border border-white/10 bg-white/5 p-3">
+          <div className="flex min-w-0 flex-1 items-center gap-2.5 rounded-xl border border-white/10 bg-white/5 p-3 sm:gap-3">
             <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-teal-500/15 text-teal-400">
-              <Ruler className="h-4.5 w-4.5" />
+              <Ruler className="h-4 w-4" />
             </span>
-            <span>
-              <span className="block text-[11px] text-slate-400">Precision</span>
-              <span className="block text-sm font-bold text-white">±0.01 ft</span>
+            <span className="min-w-0">
+              <span className="block text-[10px] leading-tight text-slate-400 sm:text-[11px]">
+                Precision
+              </span>
+              <span className="block text-xs font-bold leading-tight text-white sm:text-sm">
+                ±0.01 ft
+              </span>
             </span>
           </div>
         </div>
       </motion.div>
 
-      <div className="absolute -left-4 top-8 flex animate-float items-center gap-3 rounded-2xl border border-white/10 bg-slate-900/80 p-3.5 pr-5 shadow-2xl backdrop-blur-xl sm:-left-10">
+      <div className="absolute -left-4 top-8 hidden animate-float items-center gap-3 rounded-2xl border border-white/10 bg-slate-900/80 p-3.5 pr-5 shadow-2xl backdrop-blur-xl sm:-left-10 sm:flex">
         <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-500/15 text-emerald-400">
           <Crosshair className="h-5 w-5" />
         </span>
@@ -165,7 +178,7 @@ export default function HeroVisual() {
       </div>
 
       <div
-        className="absolute -right-3 top-1/3 flex animate-float items-center gap-3 rounded-2xl border border-white/10 bg-slate-900/80 p-3.5 pr-5 shadow-2xl backdrop-blur-xl sm:-right-8"
+        className="absolute -right-3 top-1/3 hidden animate-float items-center gap-3 rounded-2xl border border-white/10 bg-slate-900/80 p-3.5 pr-5 shadow-2xl backdrop-blur-xl sm:-right-8 sm:flex"
         style={{ animationDelay: "-2.5s" }}
       >
         <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-amber-500/15 text-amber-400">
@@ -178,7 +191,7 @@ export default function HeroVisual() {
       </div>
 
       <div
-        className="absolute -bottom-8 left-8 flex animate-float items-center gap-3 rounded-2xl border border-white/10 bg-slate-900/80 p-3.5 pr-5 shadow-2xl backdrop-blur-xl"
+        className="absolute -bottom-8 left-8 hidden animate-float items-center gap-3 rounded-2xl border border-white/10 bg-slate-900/80 p-3.5 pr-5 shadow-2xl backdrop-blur-xl sm:flex"
         style={{ animationDelay: "-5s" }}
       >
         <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-teal-500/15 text-teal-400">

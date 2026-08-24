@@ -1,8 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, -apple-system,
-    "Segoe UI", sans-serif;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
 
   --animate-marquee: marquee 42s linear infinite;
   --animate-blob: blob 16s ease-in-out infinite;
@@ -59,7 +58,21 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   text-rendering: optimizeLegibility;
+}
+
+button,
+a,
+input,
+select,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+:where(a, button, input, select, textarea):focus-visible {
+  outline: 3px solid rgb(52 211 153 / 0.65);
+  outline-offset: 3px;
 }
 
 ::selection {
@@ -98,4 +111,19 @@ body {
 
 .text-gradient-dark {
   @apply bg-gradient-to-r from-emerald-600 via-teal-600 to-green-600 bg-clip-text text-transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }

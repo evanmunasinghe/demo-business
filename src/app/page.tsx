@@ -17,7 +17,7 @@ import { brands, services, stats, whyChoose } from "@/lib/data";
 export default function Home() {
   return (
     <>
-      <section className="relative flex min-h-screen items-center overflow-hidden bg-slate-950/75 pb-24 pt-32 text-white">
+      <section className="relative flex min-h-[auto] items-center overflow-hidden bg-slate-950/75 pb-20 pt-28 text-white sm:pb-24 sm:pt-32 lg:min-h-screen">
         <div className="absolute inset-0 bg-grid-dark [mask-image:radial-gradient(ellipse_at_top,black_30%,transparent_75%)]" />
         <div className="pointer-events-none absolute -left-32 top-16 h-[28rem] w-[28rem] animate-blob rounded-full bg-emerald-600/25 blur-3xl" />
         <div
@@ -29,24 +29,24 @@ export default function Home() {
           style={{ animationDelay: "-9s" }}
         />
 
-        <div className="relative mx-auto grid w-full max-w-7xl items-center gap-20 px-4 sm:px-6 lg:grid-cols-2 lg:gap-12 lg:px-8">
+        <div className="relative mx-auto grid w-full max-w-7xl items-center gap-14 px-4 sm:px-6 lg:grid-cols-2 lg:gap-12 lg:px-8">
           <div>
             <Reveal>
-                <span className="inline-flex items-center gap-2 rounded-full border border-emerald-400/20 bg-emerald-400/10 px-4 py-1.5 text-xs font-semibold text-emerald-300 backdrop-blur">
+                <span className="inline-flex max-w-full items-center gap-2 rounded-full border border-emerald-400/20 bg-emerald-400/10 px-3 py-1.5 text-[11px] font-semibold leading-relaxed text-emerald-300 backdrop-blur sm:px-4 sm:text-xs">
                   <Star className="h-3.5 w-3.5 text-amber-400" fill="currentColor" />
                   Licensed Surveyors · Island-wide coverage · All 25 districts
                 </span>
             </Reveal>
 
             <Reveal delay={0.1}>
-              <h1 className="mt-7 text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-5xl xl:text-6xl">
+              <h1 className="mt-6 text-[2.55rem] font-extrabold leading-[1.06] tracking-tight sm:mt-7 sm:text-5xl xl:text-6xl">
                 Your land, mapped down to the{" "}
                 <span className="text-gradient-light">last inch</span>
               </h1>
             </Reveal>
 
             <Reveal delay={0.2}>
-                <p className="mt-6 max-w-xl text-lg leading-relaxed text-slate-300">
+                <p className="mt-5 max-w-xl text-base leading-relaxed text-slate-300 sm:mt-6 sm:text-lg">
                   DEMO delivers court-ready boundary surveys, bank loan plans,
                   topographic mapping and setting-out — powered by GNSS, drone
                   photogrammetry and 25+ years of experience across every district
@@ -55,17 +55,17 @@ export default function Home() {
             </Reveal>
 
             <Reveal delay={0.3}>
-              <div className="mt-9 flex flex-col gap-4 sm:flex-row">
+              <div className="mt-8 flex flex-col gap-3 sm:mt-9 sm:flex-row sm:gap-4">
                 <Link
                   href="/contact"
-                  className="group inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-emerald-600 to-teal-600 px-8 py-4 text-sm font-bold text-white shadow-xl shadow-emerald-600/30 transition-all hover:-translate-y-0.5 hover:shadow-2xl hover:shadow-emerald-600/40"
+                  className="group inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-gradient-to-r from-emerald-600 to-teal-600 px-7 py-3.5 text-sm font-bold text-white shadow-xl shadow-emerald-600/30 transition-all hover:-translate-y-0.5 hover:shadow-2xl hover:shadow-emerald-600/40 active:scale-[0.98] sm:px-8 sm:py-4"
                 >
                   Request a Free Quote
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Link>
                 <Link
                   href="/services"
-                  className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 bg-white/5 px-8 py-4 text-sm font-bold text-white backdrop-blur transition-all hover:-translate-y-0.5 hover:bg-white/10"
+                  className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/20 bg-white/5 px-7 py-3.5 text-sm font-bold text-white backdrop-blur transition-all hover:-translate-y-0.5 hover:bg-white/10 active:scale-[0.98] sm:px-8 sm:py-4"
                 >
                   Explore Services
                 </Link>
@@ -73,10 +73,10 @@ export default function Home() {
             </Reveal>
 
             <Reveal delay={0.4}>
-              <div className="mt-12 flex items-center gap-4">
+              <div className="mt-10 flex items-center gap-3 sm:mt-12 sm:gap-4">
                 <div className="flex -space-x-3">
                   {["MT", "LB", "DO", "SN"].map((initials, i) => (
-                    <span
+                  <span
                       key={initials}
                       className={`flex h-11 w-11 items-center justify-center rounded-full bg-gradient-to-br text-xs font-bold text-white ring-2 ring-slate-950 ${
                         ["from-emerald-500 to-teal-400", "from-cyan-500 to-blue-400", "from-lime-500 to-green-400", "from-amber-500 to-orange-400"][i]
@@ -95,7 +95,7 @@ export default function Home() {
                       <Star key={i} className="h-4 w-4 text-amber-400" fill="currentColor" />
                     ))}
                   </div>
-                  <p className="mt-1 text-xs font-medium text-slate-400">
+                  <p className="mt-1 max-w-[15rem] text-[11px] font-medium leading-relaxed text-slate-400 sm:max-w-none sm:text-xs">
                     Trusted by builders, notaries &amp; developers island-wide
                   </p>
                 </div>
@@ -103,17 +103,17 @@ export default function Home() {
             </Reveal>
           </div>
 
-          <div className="hidden lg:block">
+          <div className="relative mx-auto w-full max-w-xl lg:mx-0 lg:mt-0">
             <HeroVisual />
           </div>
         </div>
       </section>
 
-      <section className="border-y border-slate-100 bg-white/90 py-12">
+      <section className="border-y border-slate-100 bg-white/90 py-9 sm:py-12">
         <p className="text-center text-xs font-bold uppercase tracking-[0.25em] text-slate-400">
           Trusted by banks, contractors &amp; law firms island-wide
         </p>
-        <div className="relative mt-8 overflow-hidden">
+        <div className="relative mt-6 overflow-hidden sm:mt-8">
           <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-24 bg-gradient-to-r from-white/90 to-transparent" />
           <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-24 bg-gradient-to-l from-white/90 to-transparent" />
           <div className="flex w-max animate-marquee items-center gap-14 pr-14">
@@ -130,7 +130,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="services" className="bg-slate-50/95 py-24">
+      <section id="services" className="bg-slate-50/95 py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="What we do"
@@ -147,7 +147,7 @@ export default function Home() {
               <Reveal key={service.slug} delay={(i % 3) * 0.1}>
                 <Link
                   href={`/services#${service.slug}`}
-                  className="group block h-full rounded-2xl border border-slate-100 bg-white p-8 transition-all duration-300 hover:-translate-y-1.5 hover:border-emerald-100 hover:shadow-xl hover:shadow-emerald-600/5"
+                  className="group block h-full rounded-2xl border border-slate-100 bg-white p-6 transition-all duration-300 hover:-translate-y-1.5 hover:border-emerald-100 hover:shadow-xl hover:shadow-emerald-600/5 sm:p-8"
                 >
                   <span className="flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-600 to-teal-600 text-white shadow-lg shadow-emerald-500/25 transition-transform duration-300 group-hover:rotate-3 group-hover:scale-110">
                     <service.icon className="h-7 w-7" />
@@ -173,7 +173,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="overflow-hidden bg-white/95 py-24">
+      <section className="overflow-hidden bg-white/95 py-16 sm:py-24">
         <div className="mx-auto grid max-w-7xl items-center gap-16 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
           <div>
             <SectionHeading
@@ -210,7 +210,7 @@ export default function Home() {
                 <div className="pointer-events-none absolute -right-20 -top-20 h-64 w-64 rounded-full bg-emerald-600/30 blur-3xl" />
                 <div className="relative">
                   <CheckCircle2 className="h-10 w-10 text-emerald-400" />
-                  <h3 className="mt-5 text-2xl font-extrabold">
+                  <h3 className="mt-5 text-xl font-extrabold sm:text-2xl">
                     Accuracy you can defend at the Land Registry
                   </h3>
                   <p className="mt-3 text-sm leading-relaxed text-slate-400">
@@ -260,13 +260,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative overflow-hidden bg-slate-950/85 py-20">
+      <section className="relative overflow-hidden bg-slate-950/85 py-16 sm:py-20">
         <div className="absolute inset-0 bg-grid-dark [mask-image:radial-gradient(ellipse_at_center,black_20%,transparent_70%)]" />
         <div className="pointer-events-none absolute left-1/4 top-0 h-72 w-72 animate-blob rounded-full bg-emerald-600/15 blur-3xl" />
         <div className="relative mx-auto grid max-w-7xl grid-cols-2 gap-y-12 px-4 text-center sm:px-6 lg:grid-cols-4 lg:px-8">
           {stats.map((stat) => (
             <Reveal key={stat.label}>
-              <p className="text-5xl font-extrabold tracking-tight text-gradient-light">
+              <p className="text-4xl font-extrabold tracking-tight text-gradient-light sm:text-5xl">
                 <Counter end={stat.value} suffix={stat.suffix} />
               </p>
               <p className="mt-2 text-sm font-semibold text-slate-300">{stat.label}</p>
@@ -275,7 +275,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-slate-50/95 py-24">
+      <section className="bg-slate-50/95 py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="Testimonials"
