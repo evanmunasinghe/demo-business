@@ -18,8 +18,8 @@ export default function CTABanner() {
               Know exactly where your land stands
             </h2>
             <p className="relative mx-auto mt-5 max-w-xl text-base text-emerald-100 sm:text-lg">
-              Request a free, fixed-price quote today. Most residential surveys are
-              delivered within 3–5 business days.
+              Request a free, fixed-price quote today. Most surveys are
+              delivered within 3–5 working days, island-wide.
             </p>
             <div className="relative mt-10 flex flex-col justify-center gap-4 sm:flex-row">
               <Link

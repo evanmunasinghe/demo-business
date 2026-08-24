@@ -80,8 +80,8 @@ export default function HeroVisual() {
             <text x="292" y="56" textAnchor="middle" fontSize="9" fontWeight="700" fill="#94a3b8">N</text>
           </g>
 
-          <text x="96" y="22" fontSize="8" fill="#64748b" fontFamily="monospace">N 30°16’22”</text>
-          <text x="8" y="122" fontSize="8" fill="#64748b" fontFamily="monospace">W 97°44’08”</text>
+          <text x="96" y="22" fontSize="8" fill="#64748b" fontFamily="monospace">N 6°54’08”</text>
+          <text x="8" y="122" fontSize="8" fill="#64748b" fontFamily="monospace">E 79°52’31”</text>
 
           {corners.map((c, i) => (
             <motion.circle
@@ -119,7 +119,7 @@ export default function HeroVisual() {
           >
             <rect x="102" y="100" width="82" height="27" rx="13.5" fill="rgba(16,185,129,0.18)" stroke="#34d399" strokeWidth="1.25" strokeDasharray="4 3" />
             <text x="143" y="117.5" textAnchor="middle" fontSize="11.5" fontWeight="700" fill="#a7f3d0" letterSpacing="0.5">
-              2.41 AC
+              20 P
             </text>
           </motion.g>
 
@@ -160,7 +160,7 @@ export default function HeroVisual() {
         </span>
         <span>
           <span className="block text-xs text-slate-400">Boundary verified</span>
-          <span className="block text-sm font-bold text-white">Parcel #084-217</span>
+          <span className="block text-sm font-bold text-white">Plan No. 158412</span>
         </span>
       </div>
 
@@ -173,7 +173,7 @@ export default function HeroVisual() {
         </span>
         <span>
           <span className="block text-xs text-slate-400">New survey order</span>
-          <span className="block text-sm font-bold text-white">ALTA · 12.4 acres</span>
+          <span className="block text-sm font-bold text-white">20 perches · Nugegoda</span>
         </span>
       </div>
 

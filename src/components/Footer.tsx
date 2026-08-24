@@ -37,12 +37,12 @@ export default function Footer() {
                 <LandPlot className="h-5 w-5 text-white" />
               </span>
               <span className="text-xl font-extrabold tracking-tight text-white">
-                Meridian<span className="text-amber-500">.</span>
+                DEMO<span className="text-amber-500">.</span>
               </span>
             </Link>
             <p className="mt-5 max-w-xs text-sm leading-relaxed">
-              A licensed land surveying firm delivering precise boundary, title,
-              topographic and construction surveys across Central Texas since 1998.
+              A licensed land surveying firm delivering precise boundary, bank
+              loan, topographic and setting-out surveys island-wide across Sri Lanka since 1998.
             </p>
             <div className="mt-6 flex gap-3">
               {socials.map((social) => {
@@ -117,7 +117,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-3">
                 <Clock className="mt-0.5 h-4 w-4 shrink-0 text-emerald-500" />
-                <span>Mon – Fri, 8:00 AM – 5:00 PM CST</span>
+                <span>Mon – Fri, 8:30 AM – 5:00 PM</span>
               </li>
             </ul>
 
@@ -157,7 +157,7 @@ export default function Footer() {
 
         <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-xs sm:flex-row">
           <p>© {new Date().getFullYear()} {site.fullName}. All rights reserved.</p>
-          <p className="text-slate-600">Texas Board of Professional Land Surveying — Firm #10045200</p>
+          <p className="text-slate-600">Licensed Surveyor — Survey Department of Sri Lanka · Reg. No. LS/1042</p>
         </div>
       </div>
     </footer>

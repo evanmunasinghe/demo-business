@@ -32,10 +32,10 @@ export default function Home() {
         <div className="relative mx-auto grid w-full max-w-7xl items-center gap-20 px-4 sm:px-6 lg:grid-cols-2 lg:gap-12 lg:px-8">
           <div>
             <Reveal>
-              <span className="inline-flex items-center gap-2 rounded-full border border-emerald-400/20 bg-emerald-400/10 px-4 py-1.5 text-xs font-semibold text-emerald-300 backdrop-blur">
-                <Star className="h-3.5 w-3.5 text-amber-400" fill="currentColor" />
-                Licensed P.L.S. · Fully insured · Serving 40+ counties
-              </span>
+                <span className="inline-flex items-center gap-2 rounded-full border border-emerald-400/20 bg-emerald-400/10 px-4 py-1.5 text-xs font-semibold text-emerald-300 backdrop-blur">
+                  <Star className="h-3.5 w-3.5 text-amber-400" fill="currentColor" />
+                  Licensed Surveyors · Island-wide coverage · All 25 districts
+                </span>
             </Reveal>
 
             <Reveal delay={0.1}>
@@ -46,11 +46,12 @@ export default function Home() {
             </Reveal>
 
             <Reveal delay={0.2}>
-              <p className="mt-6 max-w-xl text-lg leading-relaxed text-slate-300">
-                Meridian delivers court-ready boundary surveys, ALTA title surveys,
-                topographic mapping and construction staking — powered by GNSS,
-                drone photogrammetry and 25+ years of local expertise.
-              </p>
+                <p className="mt-6 max-w-xl text-lg leading-relaxed text-slate-300">
+                  DEMO delivers court-ready boundary surveys, bank loan plans,
+                  topographic mapping and setting-out — powered by GNSS, drone
+                  photogrammetry and 25+ years of experience across every district
+                  of Sri Lanka.
+                </p>
             </Reveal>
 
             <Reveal delay={0.3}>
@@ -95,7 +96,7 @@ export default function Home() {
                     ))}
                   </div>
                   <p className="mt-1 text-xs font-medium text-slate-400">
-                    Trusted by builders, developers &amp; attorneys across Texas
+                    Trusted by builders, notaries &amp; developers island-wide
                   </p>
                 </div>
               </div>
@@ -110,7 +111,7 @@ export default function Home() {
 
       <section className="border-y border-slate-100 bg-white/90 py-12">
         <p className="text-center text-xs font-bold uppercase tracking-[0.25em] text-slate-400">
-          Trusted by title companies, contractors &amp; law firms
+          Trusted by banks, contractors &amp; law firms island-wide
         </p>
         <div className="relative mt-8 overflow-hidden">
           <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-24 bg-gradient-to-r from-white/90 to-transparent" />
@@ -139,7 +140,7 @@ export default function Home() {
                 <span className="text-gradient-dark">One standard: precision.</span>
               </>
             }
-            description="From a single backyard fence line to a 400-lot subdivision — every deliverable signed and sealed by a licensed P.L.S."
+            description="From a single perch in Colombo to a 400-lot scheme in Kurunegala — every plan signed and sealed by a Licensed Surveyor."
           />
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {services.map((service, i) => (
@@ -177,7 +178,7 @@ export default function Home() {
           <div>
             <SectionHeading
               align="left"
-              eyebrow="Why Meridian"
+              eyebrow="Why DEMO"
               title={
                 <>
                   Precision is only <span className="text-gradient-dark">the beginning</span>
@@ -210,12 +211,12 @@ export default function Home() {
                 <div className="relative">
                   <CheckCircle2 className="h-10 w-10 text-emerald-400" />
                   <h3 className="mt-5 text-2xl font-extrabold">
-                    Accuracy you can defend in court
+                    Accuracy you can defend at the Land Registry
                   </h3>
                   <p className="mt-3 text-sm leading-relaxed text-slate-400">
-                    Every measurement is reconciled against deeds, plats and county
-                    records — and every deliverable is sealed by a licensed
-                    Professional Land Surveyor.
+                    Every measurement is reconciled against deeds, prior plans and
+                    Land Registry records — sealed by a Licensed Surveyor under
+                    the Surveyors Act of Sri Lanka.
                   </p>
                   <hr className="my-8 border-white/10" />
                   <div className="grid grid-cols-3 gap-4 text-center">
@@ -251,7 +252,7 @@ export default function Home() {
                 </span>
                 <span>
                   <span className="block text-sm font-bold text-slate-900">Excellence Award</span>
-                  <span className="block text-xs text-slate-500">Texas Society of Surveyors</span>
+                  <span className="block text-xs text-slate-500">Institute of Surveyors of Sri Lanka</span>
                 </span>
               </div>
             </div>
@@ -283,7 +284,7 @@ export default function Home() {
                 Trusted by those who <span className="text-gradient-dark">build on our word</span>
               </>
             }
-            description="Contractors, closing attorneys and landowners rely on Meridian plats every single day."
+            description="Contractors, notaries and landowners rely on DEMO survey plans every single day."
           />
           <Testimonials />
         </div>

@@ -35,7 +35,7 @@ export default function Navbar() {
       }`}
     >
       <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link href="/" className="group flex items-center gap-2.5" aria-label="Meridian Land Surveying home">
+        <Link href="/" className="group flex items-center gap-2.5" aria-label="DEMO home">
           <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-600 to-teal-600 shadow-lg shadow-emerald-600/30 transition-transform duration-300 group-hover:rotate-3 group-hover:scale-105">
             <LandPlot className="h-5 w-5 text-white" />
           </span>
@@ -44,7 +44,7 @@ export default function Navbar() {
               solid ? "text-slate-900" : "text-white"
             }`}
           >
-            Meridian<span className="text-amber-500">.</span>
+            DEMO<span className="text-amber-500">.</span>
           </span>
         </Link>
 

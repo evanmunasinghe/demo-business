@@ -17,7 +17,7 @@ import { milestones, team } from "@/lib/data";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Founded in 1998, Meridian Land Surveying is a team of licensed P.L.S.s, CAD technicians and FAA-certified drone pilots who have mapped 12,000+ parcels across Texas.",
+    "Founded in 1998, DEMO Land Surveying is a Colombo-based team of Licensed Surveyors, CAD technicians and drone pilots who have delivered 12,000+ survey plans across all 25 districts of Sri Lanka.",
 };
 
 const pillars = [
@@ -26,21 +26,21 @@ const pillars = [
     title: "Our Mission",
     gradient: "from-emerald-600 to-teal-600",
     shadow: "shadow-emerald-500/25",
-    text: "To give property owners, developers and attorneys absolute confidence in every acre — through surveys that stand up to any court, lender or county recorder.",
+    text: "To give landowners, developers and notaries across Sri Lanka absolute confidence in every perch — through surveys that stand up to any bank, Land Registry or court of law.",
   },
   {
     icon: Eye,
     title: "Our Vision",
     gradient: "from-teal-500 to-green-500",
     shadow: "shadow-teal-500/25",
-    text: "A future where every land decision is made on precise, current and accessible measurement data — never on guesswork or outdated records.",
+    text: "A future where every land decision in Sri Lanka is made on precise, current and accessible measurement data — never on guesswork or outdated records.",
   },
   {
     icon: HeartHandshake,
     title: "Our Values",
     gradient: "from-amber-500 to-orange-500",
     shadow: "shadow-amber-500/25",
-    text: "Accuracy without compromise. Integrity in every stake we set. And genuine respect for the land and the people whose futures depend on it.",
+    text: "Accuracy without compromise. Integrity in every beacon we set. And genuine respect for the land and the families whose futures depend on it.",
   },
 ];
 
@@ -49,7 +49,7 @@ export default function About() {
     <>
       <PageHeader
         label="About Us"
-        title="The story behind Meridian"
+        title="The story behind DEMO"
         description="A crew of licensed surveyors, CAD technicians and drone pilots obsessed with getting every boundary right."
       />
 
@@ -68,18 +68,18 @@ export default function About() {
             />
             <Reveal delay={0.1} className="-mt-6 space-y-5 leading-relaxed text-slate-600">
               <p>
-                Meridian Land Surveying was founded in Austin in 1998 by Robert
-                Hayes, P.L.S., with a used total station, a pickup truck and one
-                conviction: every property owner deserves certainty without the
+                DEMO Land Surveying was founded in Colombo in 1998 by A.B.
+                Jayawardena with a secondhand theodolite, a borrowed office and
+                one conviction: every landowner deserves certainty without the
                 big-firm runaround.
               </p>
               <p>
-                Today we’re an 18-person crew of licensed surveyors, CAD
-                technicians and FAA-certified drone pilots who have completed more
-                than 12,000 surveys across 40 Texas counties.
+                Today we’re an 18-person crew of Licensed Surveyors, CAD
+                technicians and drone pilots who have delivered more than 12,000
+                plans across all 25 districts — from Point Pedro to Dondra Head.
               </p>
               <p>
-                We stay deliberately independent. Every plat is signed personally
+                We stay deliberately independent. Every plan is signed personally
                 by a principal of the firm — and when you call, you talk directly
                 to the surveyor responsible for your land.
               </p>
@@ -88,16 +88,17 @@ export default function About() {
             <Reveal delay={0.2}>
               <div className="mt-10 rounded-2xl border-l-4 border-emerald-600 bg-slate-50 p-6">
                 <p className="italic leading-relaxed text-slate-700">
-                  “A fence can be moved. A mistake in a recorded plat follows the
-                  land forever. That’s why we measure twice — then measure again.”
+                  “A wall can be rebuilt. A mistake on a plan filed at the Land
+                  Registry follows that land forever. That’s why we measure twice
+                  — then measure again.”
                 </p>
                 <div className="mt-4 flex items-center gap-3">
                   <span className="flex h-11 w-11 items-center justify-center rounded-full bg-gradient-to-br from-emerald-600 to-teal-600 text-xs font-bold text-white">
-                    RH
+                    AJ
                   </span>
                   <span>
-                    <span className="block text-sm font-bold text-slate-900">Robert Hayes, P.L.S.</span>
-                    <span className="block text-xs text-slate-500">Founder &amp; Principal Surveyor</span>
+                    <span className="block text-sm font-bold text-slate-900">A.B. Jayawardena</span>
+                    <span className="block text-xs text-slate-500">Founder &amp; Senior Licensed Surveyor</span>
                   </span>
                 </div>
               </div>
@@ -159,7 +160,7 @@ export default function About() {
             eyebrow="Meet the crew"
             title={
               <>
-                The people behind <span className="text-gradient-dark">the plats</span>
+                The people behind <span className="text-gradient-dark">the plans</span>
               </>
             }
             description="Licensed, certified and local — get to know the experts you’ll actually work with."

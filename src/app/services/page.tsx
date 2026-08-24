@@ -11,7 +11,7 @@ import { processSteps, services, site } from "@/lib/data";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Boundary surveys, ALTA/NSPS land title surveys, topographic mapping, construction staking, subdivision platting and FEMA elevation certificates across Central Texas.",
+    "Boundary surveys, bank loan surveys, topographic mapping, building setting-out, subdivision plans and Bim Saviya title surveys — island-wide across Sri Lanka.",
 };
 
 export default function Services() {
@@ -20,7 +20,7 @@ export default function Services() {
       <PageHeader
         label="Services"
         title="What we can survey for you"
-        description="From a single backyard fence line to a 400-lot subdivision — six core practices, one standard of precision."
+        description="From a single perch in Colombo to a 400-lot scheme in Kurunegala — six core practices, one standard of precision."
       />
 
       <section className="bg-white/95 py-24">
@@ -117,7 +117,7 @@ export default function Services() {
                 <div className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-emerald-500/20 blur-3xl" />
                 <h3 className="relative text-lg font-bold">Still have questions?</h3>
                 <p className="relative mt-2 text-sm leading-relaxed text-slate-400">
-                  Our surveyors reply within one business day — usually much faster on WhatsApp.
+                  Our Licensed Surveyors reply within one working day — usually much faster on WhatsApp.
                 </p>
                 <a
                   href={site.whatsapp}

@@ -8,26 +8,26 @@ import { site, socialIconMap, socials } from "@/lib/data";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Request a free land surveying quote from Meridian Land Surveying — boundary surveys, ALTA, topographic mapping and construction staking across Central Texas.",
+    "Request a free land surveying quote from DEMO Land Surveying, Colombo — boundary surveys, bank loan plans, topographic mapping and setting-out island-wide in Sri Lanka.",
 };
 
 const contactCards = [
   {
     icon: Phone,
     title: "Call Us",
-    lines: [site.phoneDisplay, "Rush & emergency staking available"],
+    lines: [site.phoneDisplay, "Hotline · island-wide coverage"],
     href: site.phoneHref,
   },
   {
     icon: Mail,
     title: "Email Us",
-    lines: [site.email, "records@meridiansurveying.com"],
+    lines: [site.email, "records@demolandsurveying.lk"],
     href: `mailto:${site.email}`,
   },
   {
     icon: MapPin,
     title: "Visit Us",
-    lines: ["1250 Courthouse Square, Suite 204", "Austin, TX 78701"],
+    lines: ["No. 128, Havelock Road, Colombo 05", "Sri Lanka"],
     href: site.mapsLink,
   },
   {
@@ -92,7 +92,7 @@ export default function Contact() {
                 <div className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-emerald-600/30 blur-3xl" />
                 <h3 className="relative text-lg font-bold">Prefer to talk to a surveyor?</h3>
                 <p className="relative mt-2 text-sm leading-relaxed text-slate-400">
-                  Skip the inbox and speak directly with a licensed P.L.S. — no phone trees, no bots.
+                  Skip the inbox and speak directly with a Licensed Surveyor — no phone trees, no bots.
                 </p>
                 <a
                   href={site.phoneHref}
@@ -194,7 +194,7 @@ export default function Contact() {
                   <MapPin className="h-5 w-5" fill="currentColor" />
                 </span>
                 <span>
-                  <span className="block text-xs text-slate-500">Visit our HQ</span>
+                  <span className="block text-xs text-slate-500">Visit our Colombo office</span>
                   <span className="block max-w-[230px] truncate text-sm font-bold text-slate-900">
                     {site.address}
                   </span>

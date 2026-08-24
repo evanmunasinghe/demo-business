@@ -14,11 +14,11 @@ const jakarta = Plus_Jakarta_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: "Meridian Land Surveying — Precise Surveys, Confident Decisions",
-    template: "%s | Meridian Land Surveying",
+    default: "DEMO — Licensed Land Surveyors in Sri Lanka",
+    template: "%s | DEMO Land Surveying",
   },
   description:
-    "Licensed land surveyors providing boundary surveys, ALTA/NSPS title surveys, topographic mapping, construction staking and FEMA elevation certificates across Central Texas.",
+    "Licensed land surveyors in Colombo, Sri Lanka providing boundary surveys, bank loan surveys, topographic mapping, setting-out, subdivision plans and Bim Saviya title surveys island-wide.",
 };
 
 export const viewport = {
