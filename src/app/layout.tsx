@@ -7,12 +7,20 @@ import WhatsAppFloat from "@/components/WhatsAppFloat";
 import ScrollProgress from "@/components/ScrollProgress";
 
 export const metadata: Metadata = {
+  // Vercel fills this automatically; set SITE_URL (e.g. https://example.lk) when hosting elsewhere.
+  ...(process.env.SITE_URL && { metadataBase: new URL(process.env.SITE_URL) }),
   title: {
     default: "DEMO — Licensed Land Surveyors in Sri Lanka",
     template: "%s | DEMO Land Surveying",
   },
   description:
     "Licensed land surveyors in Colombo, Sri Lanka providing boundary surveys, bank loan surveys, topographic mapping, setting-out, subdivision plans and Bim Saviya title surveys island-wide.",
+  openGraph: {
+    type: "website",
+    siteName: "DEMO Land Surveying",
+    locale: "en_LK",
+  },
+  twitter: { card: "summary_large_image" },
 };
 
 export const viewport = {
